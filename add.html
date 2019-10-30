@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TODO List</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
+      integrity="sha256-vK3UTo/8wHbaUn+dTQD0X6dzidqc5l7gczvH+Bnowwk="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" type="text/css" />
+  </head>
+
+  <body>
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            TODO List
+          </h1>
+          <h2 class="subtitle">
+            This is a project to manage your tasks with bulma with react.
+          </h2>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="tabs">
+        <ul>
+          <li><a href="index.html">List</a></li>
+          <li><a href="search-error.html">Search Error</a></li>
+          <li><a href="toggle-opended.html">Toggle Opened</a></li>
+          <li class="is-active"><a href="add.html">Add Form</a></li>
+          <li><a href="edit.html">Edit Form</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <h3 class="title has-text-centered">Add Task</h3>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label for="title" class="label">Title *</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control"><input type="text" class="input is-danger" name="title" id="title" placeholder="Enter with the title"/></div>
+              <p class="help is-danger">
+                This field is required
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label for="description" class="label">Description</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control"><textarea type="text" class="textarea" name="description" id="description" placeholder="Enter with the description"/></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-grouped is-grouped-centered">
+          <p class="control">
+            <button class="button is-light">
+              <span class="icon"><i class="fas fa-times"></i></span>
+              <span>Cancel</span>
+            </button>
+          </p>
+          <p class="control">
+            <button class="button is-success">
+              <span class="icon"><i class="fas fa-save"></i></span>
+              <span>Save</span>
+            </button>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <script src="./src/main.js"></script>
+  </body>
+</html>
